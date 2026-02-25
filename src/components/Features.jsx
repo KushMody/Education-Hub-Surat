@@ -109,7 +109,7 @@ const features = [
 
 const Features = () => {
     return (
-        <section className="py-16 sm:py-32 bg-white overflow-hidden scroll-mt-24" id="why-choose-us">
+        <section className="py-16 sm:py-32 bg-white overflow-hidden scroll-mt-24" id="features">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-24">
                     {features.map((feature, index) => (
