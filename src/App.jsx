@@ -13,7 +13,7 @@ import Features from './components/Features';
 
 function App() {
   return (
-    <div className="min-h-screen bg-slate-900 text-slate-50 overflow-hidden font-sans selection:bg-brand-500 selection:text-white">
+    <div className="min-h-screen bg-slate-900 text-slate-50 font-sans selection:bg-brand-500 selection:text-white">
       <Navbar />
       <main>
         <Hero />
