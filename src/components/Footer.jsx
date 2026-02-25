@@ -1,6 +1,6 @@
 import React from 'react';
 import { MapPin, Phone, Mail, ArrowRight } from 'lucide-react';
-import logoImg from '../assets/Images/logo_edu_hub.jpg';
+import logoImg from '../assets/Images/Updated_Logo.png';
 
 const Footer = () => {
     return (
