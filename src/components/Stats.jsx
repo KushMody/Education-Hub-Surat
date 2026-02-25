@@ -12,7 +12,6 @@ const Stats = () => {
 
     return (
         <section
-            id="why-choose-us"
             className="py-12 sm:py-24 relative bg-white overflow-hidden"
         >
             {/* Background Map Image with Opacity */}

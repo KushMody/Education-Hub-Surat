@@ -52,6 +52,24 @@ const Navbar = () => {
         { name: 'WHY CHOOSE US?', href: '#why-choose-us', id: 'why-choose-us' },
     ];
 
+    const scrollToSection = (e, id) => {
+        e.preventDefault();
+        const element = document.getElementById(id);
+        if (element) {
+            const offset = 80; // height of the fixed navbar
+            const bodyRect = document.body.getBoundingClientRect().top;
+            const elementRect = element.getBoundingClientRect().top;
+            const elementPosition = elementRect - bodyRect;
+            const offsetPosition = elementPosition - offset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+            setIsMobileMenuOpen(false);
+        }
+    };
+
     return (
         <nav
             className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white border-b border-slate-200 ${isScrolled ? 'py-2 shadow-md' : 'py-4'
@@ -75,6 +93,7 @@ const Navbar = () => {
                             <a
                                 key={link.name}
                                 href={link.href}
+                                onClick={(e) => scrollToSection(e, link.id)}
                                 className={`text-[13px] font-bold tracking-wide transition-all relative py-1 ${activeSection === link.id
                                     ? 'text-brand-500'
                                     : 'text-brand-600 hover:text-brand-400'
@@ -96,6 +115,7 @@ const Navbar = () => {
 
                     <a
                         href="#contact"
+                        onClick={(e) => scrollToSection(e, 'contact')}
                         className={`px-6 py-2.5 rounded flex items-center gap-2 border transition-colors text-[14px] ${activeSection === 'contact'
                             ? 'bg-brand-500 text-white border-brand-500'
                             : 'border-brand-400 text-brand-500 hover:bg-brand-50'
@@ -131,14 +151,14 @@ const Navbar = () => {
                                     href={link.href}
                                     className={`text-[14px] font-bold tracking-wide transition-colors py-2 border-b border-slate-100 last:border-0 ${activeSection === link.id ? 'text-brand-500' : 'text-brand-600 hover:text-brand-400'
                                         }`}
-                                    onClick={() => setIsMobileMenuOpen(false)}
+                                    onClick={(e) => scrollToSection(e, link.id)}
                                 >
                                     {link.name}
                                 </a>
                             ))}
                             <a
                                 href="#contact"
-                                onClick={() => setIsMobileMenuOpen(false)}
+                                onClick={(e) => scrollToSection(e, 'contact')}
                                 className={`w-full mt-2 px-5 py-3 rounded flex justify-center items-center gap-2 border font-medium transition-all active:scale-95 text-[14px] ${activeSection === 'contact'
                                     ? 'bg-brand-500 text-white border-brand-500'
                                     : 'border-brand-400 text-brand-500 hover:bg-brand-50'
