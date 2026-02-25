@@ -17,7 +17,7 @@ const Hero = () => {
     }, [images.length]);
 
     return (
-        <section id="home" className="relative w-full h-[45dvh] lg:h-[calc(100vh-112px)] lg:min-h-[750px] flex items-center justify-center overflow-hidden scroll-mt-24 mt-[20dvh] lg:mt-[112px]">
+        <section id="home" className="relative w-full h-[50dvh] lg:h-[calc(100vh-112px)] lg:min-h-[750px] flex items-center justify-center overflow-hidden scroll-mt-24 mt-[12dvh] lg:mt-[112px]">
 
             {/* Background Image Slider */}
             <div className="absolute inset-0 w-full h-full z-0 overflow-hidden bg-slate-900">
@@ -45,7 +45,7 @@ const Hero = () => {
                     transition={{ duration: 1, delay: 0.5 }}
                     className="max-w-4xl"
                 >
-                    <h1 className="text-xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight sm:leading-[1.1] mb-2">
+                    <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight sm:leading-[1.1] mb-4">
                         Empowering Students for a
                         <br />
                         <span className="text-[#c5e2fa]">"Brighter Future"</span>
