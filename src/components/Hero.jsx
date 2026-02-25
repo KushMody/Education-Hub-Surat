@@ -17,7 +17,7 @@ const Hero = () => {
     }, [images.length]);
 
     return (
-        <section id="home" className="relative w-full aspect-[16/10] sm:aspect-video lg:h-[calc(100vh-112px)] lg:min-h-[600px] flex items-center justify-center overflow-hidden scroll-mt-24 mt-[96px] sm:mt-[112px]">
+        <section id="home" className="relative w-full h-[45dvh] lg:h-[calc(100vh-112px)] lg:min-h-[750px] flex items-center justify-center overflow-hidden scroll-mt-24 mt-[20dvh] lg:mt-[112px]">
 
             {/* Background Image Slider */}
             <div className="absolute inset-0 w-full h-full z-0 overflow-hidden bg-slate-900">
@@ -29,7 +29,7 @@ const Hero = () => {
                         animate={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 0.95 }}
                         transition={{ duration: 1.5, ease: "easeInOut" }}
-                        className="absolute inset-0 w-full h-full object-cover object-top"
+                        className="absolute inset-0 w-full h-full object-contain sm:object-cover object-center lg:object-top"
                         alt="Hero background"
                     />
                 </AnimatePresence>
@@ -38,14 +38,14 @@ const Hero = () => {
             </div>
 
             {/* Content Container */}
-            <div className="max-w-7xl mx-auto px-6 w-full relative z-10 flex flex-col justify-center h-full">
+            <div className="max-w-7xl mx-auto px-4 w-full relative z-10 flex flex-col justify-center h-full">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
                     className="max-w-4xl"
                 >
-                    <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-[1.1] mb-4">
+                    <h1 className="text-xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight sm:leading-[1.1] mb-2">
                         Empowering Students for a
                         <br />
                         <span className="text-[#c5e2fa]">"Brighter Future"</span>

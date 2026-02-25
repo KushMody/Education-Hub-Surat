@@ -71,10 +71,10 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white border-b border-slate-200 ${isScrolled ? 'py-2 shadow-md' : 'py-4'
-                }`}
+            className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white border-b border-slate-200 ${isScrolled ? 'py-1 shadow-md' : 'py-2'
+                } h-[20dvh] lg:h-auto flex items-center`}
         >
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between w-full">
 
                 {/* Logo */}
                 <a href="#" className="flex items-center active:scale-95 transition-transform" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
