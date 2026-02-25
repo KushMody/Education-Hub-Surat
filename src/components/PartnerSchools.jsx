@@ -13,7 +13,7 @@ const PartnerSchools = () => {
     ];
 
     return (
-        <section className="h-[44dvh] lg:h-auto py-2 sm:py-20 bg-slate-900 border-t border-b border-white/5 relative overflow-hidden flex items-center">
+        <section className="h-[44dvh] py-2 sm:py-20 bg-slate-900 border-t border-b border-white/5 relative overflow-hidden flex items-center">
             <div className="max-w-7xl mx-auto px-6 w-full">
                 <div className="text-center mb-2 sm:mb-12">
                     <h2 className="text-lg sm:text-4xl font-bold text-white">
