@@ -1,16 +1,16 @@
 import React from 'react';
 import { MapPin, Phone, Mail, ArrowRight } from 'lucide-react';
-import logoImg from '../assets/Images/Updated_Logo.png';
+import logoImg from '../assets/Images/logo_edu_hub.jpg';
 
 const Footer = () => {
     return (
-        <footer id="contact" className="bg-slate-950 pt-16 sm:pt-24 pb-12 border-t border-white/5 relative overflow-hidden">
+        <footer id="contact" className="bg-slate-950 pt-24 pb-12 border-t border-white/5 relative overflow-hidden">
             {/* Background glow */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-2xl h-px bg-gradient-to-r from-transparent via-brand-500 to-transparent opacity-50" />
             <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-full max-w-sm h-48 bg-brand-500/20 blur-[100px] pointer-events-none" />
 
             <div className="max-w-7xl mx-auto px-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 mb-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
 
                     {/* Brand Col */}
                     <div className="lg:col-span-1">
