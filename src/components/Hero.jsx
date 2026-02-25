@@ -29,7 +29,7 @@ const Hero = () => {
                         animate={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 0.95 }}
                         transition={{ duration: 1.5, ease: "easeInOut" }}
-                        className="absolute inset-0 w-full h-full object-contain"
+                        className="absolute inset-0 w-full h-full object-cover object-top"
                         alt="Hero background"
                     />
                 </AnimatePresence>
