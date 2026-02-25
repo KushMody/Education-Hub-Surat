@@ -16,12 +16,9 @@ const Stats = () => {
             id="why-choose-us">
             {/* Background Map Image with Opacity */}
             <div
-                className="absolute inset-0 w-full h-full opacity-60 pointer-events-none"
+                className="absolute inset-0 w-full h-full opacity-40 lg:opacity-60 pointer-events-none bg-cover lg:bg-contain bg-center bg-no-repeat"
                 style={{
                     backgroundImage: `url(${mapImg})`,
-                    backgroundSize: 'contain',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat'
                 }}
             />
 
