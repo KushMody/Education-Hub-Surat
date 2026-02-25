@@ -21,7 +21,7 @@ const Results = () => {
         : resultImages.filter(img => img.category === activeTab);
 
     return (
-        <section id="results" className="py-24 bg-white text-slate-900 relative">
+        <section id="results" className="py-24 bg-white text-slate-900 relative scroll-mt-24">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center max-w-2xl mx-auto mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold mb-8 uppercase tracking-wide">

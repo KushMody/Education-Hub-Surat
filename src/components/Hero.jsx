@@ -17,7 +17,7 @@ const Hero = () => {
     }, [images.length]);
 
     return (
-        <section id="home" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+        <section id="home" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden scroll-mt-24">
 
             {/* Background Image Slider */}
             <div className="absolute inset-0 w-full h-full z-0 overflow-hidden bg-slate-900">

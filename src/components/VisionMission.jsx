@@ -33,7 +33,7 @@ const VisionMission = () => {
     ];
 
     return (
-        <section id="about" className="py-12 sm:py-24 bg-white relative overflow-hidden">
+        <section id="about" className="py-12 sm:py-24 bg-white relative overflow-hidden scroll-mt-24">
             <div className="max-w-6xl mx-auto px-6 space-y-16 sm:space-y-32">
 
                 {sections.map((section, index) => (

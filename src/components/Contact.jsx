@@ -6,7 +6,7 @@ const Contact = () => {
     const whatsappLink = "https://api.whatsapp.com/send/?phone=919925714332&text=Hello%2C+I+want+to+know+more+about+the+Free+Demo+Class+and+10%25+discount+offer.&type=phone_number&app_absent=0";
 
     return (
-        <section className="bg-white py-12 sm:py-16 px-4 md:px-8">
+        <section id="contact" className="bg-white py-12 sm:py-16 px-4 md:px-8 scroll-mt-24">
             <div className="max-w-7xl mx-auto">
                 <div className="bg-gradient-to-r from-[#2eb9fa] to-[#dcf0fe] rounded-[2rem] p-6 sm:p-10 md:p-14 relative overflow-hidden flex flex-col items-start shadow-sm">
 

@@ -53,20 +53,19 @@ const Navbar = () => {
     ];
 
     const scrollToSection = (e, id) => {
-        e.preventDefault();
+        if (e) e.preventDefault();
         const element = document.getElementById(id);
         if (element) {
-            const offset = 80; // height of the fixed navbar
-            const bodyRect = document.body.getBoundingClientRect().top;
-            const elementRect = element.getBoundingClientRect().top;
-            const elementPosition = elementRect - bodyRect;
-            const offsetPosition = elementPosition - offset;
-
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
-            });
+            // Close menu first to ensure full viewport availability
             setIsMobileMenuOpen(false);
+
+            // Short delay to allow menu animation to start/finish before scrolling
+            setTimeout(() => {
+                element.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }, 100);
         }
     };
 
