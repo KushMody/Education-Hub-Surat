@@ -17,7 +17,7 @@ const Hero = () => {
     }, [images.length]);
 
     return (
-        <section id="home" className="relative h-[calc(100vh-80px)] sm:h-[calc(100vh-112px)] min-h-[600px] flex items-center justify-center overflow-hidden scroll-mt-24 mt-20 sm:mt-28">
+        <section id="home" className="relative h-[calc(100vh-96px)] sm:h-[calc(100vh-120px)] min-h-[600px] flex items-center justify-center overflow-hidden scroll-mt-24 mt-24 sm:mt-32">
 
             {/* Background Image Slider */}
             <div className="absolute inset-0 w-full h-full z-0 overflow-hidden bg-slate-900">
@@ -29,7 +29,7 @@ const Hero = () => {
                         animate={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 0.95 }}
                         transition={{ duration: 1.5, ease: "easeInOut" }}
-                        className="absolute inset-0 w-full h-full object-cover object-center"
+                        className="absolute inset-0 w-full h-full object-cover object-top"
                         alt="Hero background"
                     />
                 </AnimatePresence>
