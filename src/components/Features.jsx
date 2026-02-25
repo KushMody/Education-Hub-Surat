@@ -111,7 +111,7 @@ const Features = () => {
     return (
         <section className="py-16 sm:py-32 bg-white overflow-hidden scroll-mt-24" id="features">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-24">
+                <div className="grid grid-cols-2 gap-x-4 sm:gap-x-16 gap-y-12 sm:gap-y-24">
                     {features.map((feature, index) => (
                         <motion.div
                             key={feature.id}
@@ -130,21 +130,23 @@ const Features = () => {
                                         transition: { type: "spring", stiffness: 400, damping: 30 }
                                     }
                                 }}
-                                className="relative w-32 h-32 bg-slate-50 rounded-[2.5rem] flex items-center justify-center mb-8 transition-colors duration-500 group-hover:bg-blue-50 group-hover:shadow-[0_15px_30px_-10px_rgba(59,130,246,0.1)]"
+                                className="relative w-24 h-24 sm:w-32 sm:h-32 bg-slate-50 rounded-[1.5rem] sm:rounded-[2.5rem] flex items-center justify-center mb-6 sm:mb-8 transition-colors duration-500 group-hover:bg-blue-50 group-hover:shadow-[0_15px_30px_-10px_rgba(59,130,246,0.1)]"
                                 style={{ transformStyle: "preserve-3d" }}
                             >
                                 {/* Inner subtle highlight */}
-                                <div className="absolute inset-0 rounded-[2.5rem] border border-slate-100 group-hover:border-blue-100 transition-colors" />
+                                <div className="absolute inset-0 rounded-[1.5rem] sm:rounded-[2.5rem] border border-slate-100 group-hover:border-blue-100 transition-colors" />
 
-                                <FeatureIcon type={feature.type} />
+                                <div className="scale-75 sm:scale-100">
+                                    <FeatureIcon type={feature.type} />
+                                </div>
                             </motion.div>
 
                             <motion.h3
-                                className="text-xl sm:text-[1.5rem] font-bold text-slate-800 mb-4 tracking-tight group-hover:text-blue-600 transition-colors duration-300"
+                                className="text-[16px] sm:text-[1.5rem] font-bold text-slate-800 mb-2 sm:mb-4 tracking-tight group-hover:text-blue-600 transition-colors duration-300"
                             >
                                 {feature.title}
                             </motion.h3>
-                            <p className="text-slate-500 leading-relaxed text-[1rem] sm:text-[1.1rem] max-w-md group-hover:text-slate-600 transition-colors duration-300">
+                            <p className="text-slate-500 leading-relaxed text-[13px] sm:text-[1.1rem] max-w-md group-hover:text-slate-600 transition-colors duration-300">
                                 {feature.description}
                             </p>
                         </motion.div>
