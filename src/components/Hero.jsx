@@ -45,10 +45,10 @@ const Hero = () => {
                     transition={{ duration: 1, delay: 0.5 }}
                     className="max-w-4xl pointer-events-auto"
                 >
-                    <h1 className="text-xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-white leading-tight sm:leading-[1.1] pr-4 sm:pr-0">
+                    <h1 className="text-[1.35rem] sm:text-4xl md:text-6xl lg:text-8xl font-bold text-white leading-tight sm:leading-[1.1] pr-4 sm:pr-0">
                         Empowering Students for a{' '}
                         <br className="hidden sm:block" />
-                        <span className="text-[#c5e2fa]">"Brighter Future"</span>
+                        <span className="text-[#c5e2fa] whitespace-nowrap">"Brighter Future"</span>
                     </h1>
                 </motion.div>
             </div>
