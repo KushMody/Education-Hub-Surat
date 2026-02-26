@@ -13,9 +13,9 @@ import Features from './components/Features';
 
 function App() {
   return (
-    <div className="min-h-screen bg-slate-900 text-slate-50 font-sans selection:bg-brand-500 selection:text-white">
+    <div className="flex flex-col min-h-screen bg-slate-900 text-slate-50 font-sans selection:bg-brand-500 selection:text-white">
       <Navbar />
-      <main>
+      <main className="flex-1 flex flex-col pt-[12vh] lg:pt-0">
         <Hero />
         <PartnerSchools />
         <Results />

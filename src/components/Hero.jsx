@@ -17,10 +17,10 @@ const Hero = () => {
     }, [images.length]);
 
     return (
-        <section id="home" className="relative w-full h-[44vh] lg:h-[88vh] flex items-center justify-center overflow-hidden scroll-mt-24 mt-[12vh]">
+        <section id="home" className="relative w-full min-h-[40vh] h-auto lg:h-[88vh] flex items-center justify-center overflow-hidden scroll-mt-24">
 
             {/* Background Image Slider */}
-            <div className="absolute inset-0 w-full h-full z-0 overflow-hidden bg-slate-900">
+            <div className="absolute inset-0 w-full h-full z-0 overflow-hidden bg-slate-900 pointer-events-none">
                 <AnimatePresence mode="wait">
                     <motion.img
                         key={currentIndex}
@@ -29,25 +29,25 @@ const Hero = () => {
                         animate={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 0.95 }}
                         transition={{ duration: 1.5, ease: "easeInOut" }}
-                        className="absolute inset-0 w-full h-full object-contain sm:object-cover object-center lg:object-top"
+                        className="w-full h-full object-cover object-center lg:object-top"
                         alt="Hero background"
                     />
                 </AnimatePresence>
                 {/* Dark overlay to make text readable */}
-                <div className="absolute inset-0 bg-black/50 sm:bg-black/40" />
+                <div className="absolute inset-0 bg-black/50 sm:bg-black/40 pointer-events-none" />
             </div>
 
             {/* Content Container */}
-            <div className="max-w-7xl mx-auto px-4 w-full relative z-10 flex flex-col justify-center h-full">
+            <div className="absolute inset-0 max-w-7xl mx-auto px-4 w-full z-10 flex flex-col justify-center h-full pointer-events-none">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    className="max-w-4xl"
+                    className="max-w-4xl pointer-events-auto"
                 >
-                    <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight sm:leading-[1.1] mb-4">
-                        Empowering Students for a
-                        <br />
+                    <h1 className="text-xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-white leading-tight sm:leading-[1.1] pr-4 sm:pr-0">
+                        Empowering Students for a{' '}
+                        <br className="hidden sm:block" />
                         <span className="text-[#c5e2fa]">"Brighter Future"</span>
                     </h1>
                 </motion.div>
