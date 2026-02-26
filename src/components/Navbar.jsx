@@ -72,7 +72,7 @@ const Navbar = () => {
     return (
         <nav
             className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white border-b border-slate-200 ${isScrolled ? 'py-1 shadow-md' : 'py-2'
-                } h-[12vh] lg:min-h-[90px] flex items-center`}
+                } h-[12vh] lg:h-[12vh] flex items-center`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between w-full">
 
