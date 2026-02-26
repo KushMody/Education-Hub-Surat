@@ -30,7 +30,7 @@ const PartnerSchools = () => {
                 </div>
 
                 {/* Marquee Container */}
-                <div className="relative flex overflow-hidden max-w-5xl mx-auto">
+                <div className="relative flex overflow-hidden max-w-7xl mx-auto">
                     <div className="flex animate-marquee whitespace-nowrap gap-8 items-center py-4">
                         {/* Repeat the array multiple times for seamless infinite scrolling */}
                         {[...schools, ...schools, ...schools, ...schools].map((school, index) => (
