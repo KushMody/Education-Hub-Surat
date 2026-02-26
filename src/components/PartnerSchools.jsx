@@ -4,12 +4,20 @@ import school1 from '../assets/Images/Schools/High_School.jpg';
 import school2 from '../assets/Images/Schools/GD_Goenka.jpg';
 import school3 from '../assets/Images/Schools/LP_Savani.jpg';
 import school4 from '../assets/Images/Schools/Radient.jpg';
+import school5 from '../assets/Images/Schools/Bagwan_Mahavir.png';
+import school6 from '../assets/Images/Schools/SDJ_mordern_school.jpg';
+import school7 from '../assets/Images/Schools/Seven_Steps.jpg';
+import school8 from '../assets/Images/Schools/Vibgyor.png';
 const PartnerSchools = () => {
     const schools = [
         { logo: school1, name: "Hills' High School" },
         { logo: school2, name: "G.D. Goenka School" },
         { logo: school3, name: "L.P. Savani Group" },
         { logo: school4, name: "Radiant English Academy" },
+        { logo: school5, name: "Bagwan Mahavir" },
+        { logo: school6, name: "SDJ Modern School" },
+        { logo: school7, name: "Seven Steps" },
+        { logo: school8, name: "Vibgyor" },
     ];
 
     return (
@@ -21,8 +29,8 @@ const PartnerSchools = () => {
                     </h2>
                 </div>
 
-                {/* Marquee Container - Constrained to show 3-4 images */}
-                <div className="relative flex overflow-hidden max-w-2xl mx-auto">
+                {/* Marquee Container */}
+                <div className="relative flex overflow-hidden max-w-5xl mx-auto">
                     <div className="flex animate-marquee whitespace-nowrap gap-8 items-center py-4">
                         {/* Repeat the array multiple times for seamless infinite scrolling */}
                         {[...schools, ...schools, ...schools, ...schools].map((school, index) => (
