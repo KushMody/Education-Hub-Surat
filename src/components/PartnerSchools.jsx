@@ -21,9 +21,9 @@ const PartnerSchools = () => {
     ];
 
     return (
-        <section className="flex-1 min-h-[43vh] lg:h-auto py-2 sm:py-20 bg-slate-900 border-t border-b border-white/5 relative overflow-hidden flex flex-col justify-center items-center">
+        <section className="flex-1 min-h-[43vh] lg:min-h-0 lg:h-[28vh] py-2 sm:py-3 bg-slate-900 border-t border-b border-white/5 relative overflow-hidden flex flex-col justify-center items-center">
             <div className="max-w-7xl mx-auto px-6 w-full">
-                <div className="text-center mb-4 sm:mb-12">
+                <div className="text-center mb-4 sm:mb-3">
                     <h2 className="text-base sm:text-4xl font-bold text-white whitespace-nowrap">
                         We teach Students from
                     </h2>

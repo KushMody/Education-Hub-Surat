@@ -17,7 +17,7 @@ const Hero = () => {
     }, [images.length]);
 
     return (
-        <section id="home" className="relative w-full min-h-[40vh] h-auto lg:h-[88vh] flex items-center justify-center overflow-hidden scroll-mt-24">
+        <section id="home" className="relative w-full min-h-[40vh] h-auto lg:h-[60vh] flex items-center justify-center overflow-hidden scroll-mt-24">
 
             {/* Background Image Slider */}
             <div className="absolute inset-0 w-full h-full z-0 overflow-hidden bg-slate-900 pointer-events-none">
@@ -43,17 +43,17 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    className="max-w-4xl pointer-events-auto"
+                    className="max-w-7xl pointer-events-auto"
                 >
-                    <h1 className="text-[1.35rem] sm:text-4xl md:text-6xl lg:text-8xl font-bold text-white leading-tight sm:leading-[1.1] pr-4 sm:pr-0">
-                        Empowering Students for a{' '}
+                    <h1 className="text-[1.35rem] sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white leading-tight sm:leading-[1.1] pr-4 sm:pr-0">
+                        Empowering Students{' '}
                         <br className="hidden sm:block" />
-                        <span className="text-[#c5e2fa] whitespace-nowrap">"Brighter Future"</span>
+                        <span>for a</span><span className="text-[#c5e2fa] whitespace-nowrap"> "Brighter Future"</span>
                     </h1>
                 </motion.div>
             </div>
 
-        </section>
+        </section >
     );
 };
 

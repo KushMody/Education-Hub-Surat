@@ -109,9 +109,9 @@ const features = [
 
 const Features = () => {
     return (
-        <section className="py-16 sm:py-32 bg-white overflow-hidden scroll-mt-24" id="features">
+        <section className="py-10 sm:py-10 bg-white overflow-hidden scroll-mt-24" id="features">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="grid grid-cols-2 gap-x-4 sm:gap-x-16 gap-y-12 sm:gap-y-24">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 sm:gap-x-8 lg:gap-x-12 gap-y-12">
                     {features.map((feature, index) => (
                         <motion.div
                             key={feature.id}

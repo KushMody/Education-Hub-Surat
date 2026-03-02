@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
 
-import visionImg from '../assets/Images/pexels-pixabay-355952-768x534.jpg';
-import missionImg from '../assets/Images/pexels-tara-winstead-7666429-768x512.jpg';
+import visionImg from '../assets/Images/Vision.png';
+import missionImg from '../assets/Images/Mission.png';
 
 const VisionMission = () => {
 
@@ -44,10 +44,15 @@ const VisionMission = () => {
 
                         {/* Image Box */}
                         <motion.div
-                            initial={{ opacity: 0, x: section.imagePosition === 'left' ? -50 : 50 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true, margin: "-100px" }}
-                            transition={{ duration: 0.6 }}
+                            initial={{ opacity: 0, x: section.imagePosition === 'left' ? -30 : 30, scale: 0.95 }}
+                            whileInView={{ opacity: 1, x: 0, scale: 1 }}
+                            whileHover={{
+                                scale: 1.02,
+                                rotate: section.imagePosition === 'left' ? -2 : 2,
+                                transition: { duration: 0.3, ease: "easeOut" }
+                            }}
+                            viewport={{ once: true, margin: "-50px" }}
+                            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                             className={`relative rounded-[2rem] overflow-hidden shadow-[0_20px_50px_-12px_rgba(0,0,0,0.3)] bg-slate-100 aspect-[4/3] w-full max-w-[500px] mx-auto md:mx-0 ${section.imagePosition === 'right' ? 'md:order-last' : ''}`}
                         >
                             <img
@@ -59,10 +64,10 @@ const VisionMission = () => {
 
                         {/* Text Content */}
                         <motion.div
-                            initial={{ opacity: 0, x: section.imagePosition === 'left' ? 50 : -50 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true, margin: "-100px" }}
-                            transition={{ duration: 0.6, delay: 0.2 }}
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, margin: "-50px" }}
+                            transition={{ duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
                             className="flex flex-col justify-center"
                         >
                             <h2 className="text-3xl sm:text-4xl md:text-[2.5rem] leading-tight font-black text-slate-800 mb-6 sm:mb-10 tracking-tight">
